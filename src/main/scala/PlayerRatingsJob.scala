@@ -22,7 +22,7 @@ object PLayerRatingJob {
     // HDFS directory for checkpointing
     val checkpointDir = "./checkpoint/"
     
-    val sc = new StreamingContext(sparkUrl, "Player Analysis", Seconds(60), sparkHome, Seq(jarFile)) 
+    val sc = new StreamingContext(sparkUrl, "Player Analysis", Seconds(300), sparkHome, Seq(jarFile)) 
     
     // Configure Twitter credentials using twitter.txt
     Configuration.configureTwitterCredentials()
