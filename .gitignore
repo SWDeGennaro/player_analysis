@@ -19,5 +19,6 @@ project/plugins/project/
 
 tweets/
 checkpoint/
+data/
 
 .DS_Store
